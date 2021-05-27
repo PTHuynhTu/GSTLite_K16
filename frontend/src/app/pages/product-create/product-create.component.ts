@@ -49,7 +49,7 @@ export class ProductCreateComponent implements OnInit, AfterContentChecked {
     add() {
         this.productService.create(this.product).subscribe(prod => {
                 if (!prod) throw new Error;
-                this.router.navigate(['/']);
+                this.router.navigate(['/seller']);
             },
             e => {
             });

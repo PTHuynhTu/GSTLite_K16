@@ -1,5 +1,6 @@
 package fa.training.RESTfull.controller;
 
+
 import fa.training.RESTfull.entity.User;
 import fa.training.RESTfull.security.JWT.JwtProvider;
 import fa.training.RESTfull.service.UserService;

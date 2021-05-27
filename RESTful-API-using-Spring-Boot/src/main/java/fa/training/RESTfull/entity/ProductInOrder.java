@@ -3,6 +3,7 @@ package fa.training.RESTfull.entity;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.springframework.transaction.annotation.Transactional;
 
 import javax.persistence.*;
 import javax.validation.constraints.Min;
@@ -15,6 +16,7 @@ import java.util.Objects;
 @Entity
 @Data
 @NoArgsConstructor
+@Transactional
 public class ProductInOrder {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)

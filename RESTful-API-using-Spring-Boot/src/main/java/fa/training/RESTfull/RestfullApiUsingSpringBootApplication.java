@@ -22,16 +22,9 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @SpringBootApplication
 //@EnableJpaAuditing
 //@EnableJpaRepositories("fa.training.RESTfull")
-//@EnableSwagger2
+@EnableSwagger2
 public class RestfullApiUsingSpringBootApplication {
-//	@Bean
-//	public Docket API() {
-//		return new Docket(DocumentationType.SWAGGER_2)
-//				.select()
-//				.apis(RequestHandlerSelectors.basePackage("fa.training.RESTfull"))
-//				.paths(PathSelectors.regex("/.*"))
-//				.build();
-//	}
+
 	@Bean
 	public Docket API() {
 		return new Docket(DocumentationType.SWAGGER_2)

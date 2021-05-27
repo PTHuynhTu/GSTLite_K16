@@ -1,6 +1,7 @@
 <h1 align="center" class="display-4 ">Products</h1>
 
-<a class="nav-item nav-link " style="color: royalblue"
+<a *ngIf="!currentUser || currentUser.role == Role.Customer" 
+class="nav-item nav-link " style="color: royalblue"
     routerLink="/seller/product/new">
     <i class="fa fa-plus-square fa-2x" aria-hidden="true"></i>
     Add product

@@ -5,6 +5,7 @@ import org.hibernate.annotations.ColumnDefault;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.DynamicUpdate;
 import org.hibernate.annotations.UpdateTimestamp;
+import org.springframework.transaction.annotation.Transactional;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -18,6 +19,7 @@ import java.util.Date;
 @Entity
 @Data
 @DynamicUpdate
+@Transactional
 public class ProductInfo implements Serializable {
     @Id
     private String productId;

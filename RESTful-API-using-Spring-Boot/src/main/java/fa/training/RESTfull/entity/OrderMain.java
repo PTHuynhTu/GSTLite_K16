@@ -6,6 +6,7 @@ import org.hibernate.annotations.ColumnDefault;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.DynamicUpdate;
 import org.hibernate.annotations.UpdateTimestamp;
+import org.springframework.transaction.annotation.Transactional;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotEmpty;
@@ -20,6 +21,7 @@ import java.util.Set;
 @Data
 @NoArgsConstructor
 @DynamicUpdate
+@Transactional
 public class OrderMain implements Serializable {
     private static final long serialVersionUID = -3819883511505235030L;
 

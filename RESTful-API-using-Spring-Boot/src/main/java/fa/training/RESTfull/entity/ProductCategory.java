@@ -3,6 +3,7 @@ package fa.training.RESTfull.entity;
 import lombok.Data;
 import org.hibernate.annotations.DynamicUpdate;
 import org.hibernate.annotations.NaturalId;
+import org.springframework.transaction.annotation.Transactional;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -14,6 +15,7 @@ import java.util.Date;
 @Entity
 @Data
 @DynamicUpdate
+@Transactional
 public class ProductCategory implements Serializable {
     @Id
     @GeneratedValue

@@ -4,6 +4,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.hibernate.annotations.NaturalId;
+import org.springframework.transaction.annotation.Transactional;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotEmpty;
@@ -16,6 +17,7 @@ import java.io.Serializable;
 @Data
 @Table(name = "users")
 @NoArgsConstructor
+@Transactional
 public class User implements Serializable {
 
     private static final long serialVersionUID = 4887904943282174032L;
